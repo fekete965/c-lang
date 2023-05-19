@@ -8,7 +8,7 @@ void getNumber(char *text, double *num);
 void calculate(double a, char operator, double b, double *result);
 void showResult(double result);
 
-const char VALID_OPERATORS[4] = {'+', '-', '*', '/'};
+const char VALID_OPERATORS[] = {'+', '-', '*', '/'};
 const int SIZE_OF_VO = sizeof(VALID_OPERATORS) / sizeof(VALID_OPERATORS[0]);
 
 int main()
