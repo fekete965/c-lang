@@ -9,12 +9,12 @@ int main()
   int nums[] = {8, 10, 6, 4, 5, 7, 3, 1, 9, 2};
   int listSize = sizeof(nums) / sizeof(nums[0]);
 
-  printf("\n\t   Selection Sort \n");
+  printf("\n|\t   Selection Sort\t\t|\n");
+  printf("-----------------------------------------\n");
 
   printf("\nUnsorted list\n");
   printNumbers(nums, listSize);
 
-  printf("\n");
   selectionSort(nums, listSize);
 
   printf("\nSorted list\n");
@@ -50,9 +50,6 @@ void selectionSort(int *list, int size)
     {
       swap(&list[i], &list[minIdx]);
     }
-
-    printf(" Step %-3d", i + 1);
-    printNumbers(list, size);
   }
 }
 
