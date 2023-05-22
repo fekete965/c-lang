@@ -10,7 +10,8 @@ int main()
   int nums[] = {8, 10, 6, 4, 5, 7, 3, 1, 9, 2};
   int listSize = sizeof(nums) / sizeof(nums[0]);
 
-  printf("\n\t   Quick Sort \n");
+  printf("\n|\t   Quick Sort\t\t|\n");
+  printf("---------------------------------\n");
 
   printf("\nUnsorted list\n");
   printNumbers(nums, listSize);
