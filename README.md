@@ -1,7 +1,9 @@
 # C - Practice
 
 - Sorts:
+
   - [Bubble Sort](bubbleSort/bubbleSort.c)
+  - [Heap Sort](heapSort/heapSort.c)
   - [Insertion Sort](insertionSort/insertionSort.c)
   - [Merge Sort](mergeSort/mergeSort.c)
   - [Quick Sort](quickSort/quickSort.c)
