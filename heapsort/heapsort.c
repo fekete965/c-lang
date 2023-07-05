@@ -4,7 +4,7 @@
 
 void buildMaxHeap(int *list, int size);
 void printNumbers(int *list, int size);
-void heapSort(int *list, int size);
+void heapsort(int *list, int size);
 void maxHeapify(int *list, int heapSize, int index);
 void swap(int *a, int *b);
 
@@ -13,13 +13,13 @@ int main()
   int nums[] = {8, 10, 6, 4, 5, 7, 3, 1, 9, 2};
   int listSize = sizeof(nums) / sizeof(nums[0]);
 
-  printf("\n|\t     Heap Sort\t\t|\n");
+  printf("\n|\t     Heapsort\t\t|\n");
   printf("---------------------------------\n");
 
   printf("\nUnsorted list\n");
   printNumbers(nums, listSize);
 
-  heapSort(nums, listSize);
+  heapsort(nums, listSize);
 
   printf("\nSorted list\n");
   printNumbers(nums, listSize);
@@ -69,7 +69,7 @@ void maxHeapify(int *list, int heapSize, int index)
   }
 }
 
-void heapSort(int *list, int size)
+void heapsort(int *list, int size)
 {
   buildMaxHeap(list, size);
 

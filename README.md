@@ -3,10 +3,10 @@
 - Sorts:
 
   - [Bubble Sort](bubbleSort/bubbleSort.c)
-  - [Heap Sort](heapSort/heapSort.c)
+  - [Heapsort](heapsort/heapsort.c)
   - [Insertion Sort](insertionSort/insertionSort.c)
   - [Merge Sort](mergeSort/mergeSort.c)
-  - [Quick Sort](quickSort/quickSort.c)
+  - [Quicksort](quicksort/quicksort.c)
   - [Selection Sort](selectionSort/selectionSort.c)
 
 - Other:

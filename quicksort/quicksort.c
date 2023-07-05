@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void printNumbers(int *list, int size);
-void quickSort(int *list, int start, int end);
+void quicksort(int *list, int start, int end);
 int partition(int *list, int start, int end);
 void swap(int *a, int *b);
 
@@ -10,13 +10,13 @@ int main()
   int nums[] = {8, 10, 6, 4, 5, 7, 3, 1, 9, 2};
   int listSize = sizeof(nums) / sizeof(nums[0]);
 
-  printf("\n|\t   Quick Sort\t\t|\n");
+  printf("\n|\t   Quicksort\t\t|\n");
   printf("---------------------------------\n");
 
   printf("\nUnsorted list\n");
   printNumbers(nums, listSize);
 
-  quickSort(nums, 0, listSize);
+  quicksort(nums, 0, listSize);
 
   printf("\nSorted list\n");
   printNumbers(nums, listSize);
@@ -33,7 +33,7 @@ void printNumbers(int *list, int size)
   printf("\n");
 }
 
-void quickSort(int *list, int start, int end)
+void quicksort(int *list, int start, int end)
 {
   if (end <= start)
   {
@@ -41,8 +41,8 @@ void quickSort(int *list, int start, int end)
   }
 
   int pivot = partition(list, start, end);
-  quickSort(list, start, pivot - 1);
-  quickSort(list, pivot + 1, end);
+  quicksort(list, start, pivot - 1);
+  quicksort(list, pivot + 1, end);
 }
 
 int partition(int *list, int start, int end)
