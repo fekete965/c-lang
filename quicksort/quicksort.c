@@ -1,66 +1,66 @@
 #include <stdio.h>
 
-void printNumbers(int *list, int size);
-void quicksort(int *list, int start, int end);
-int partition(int *list, int start, int end);
+void printNumbers(int *arr, int size);
+void quicksort(int *arr, int start, int end);
+int partition(int *arr, int start, int end);
 void swap(int *a, int *b);
 
 int main()
 {
   int nums[] = {8, 10, 6, 4, 5, 7, 3, 1, 9, 2};
-  int listSize = sizeof(nums) / sizeof(nums[0]);
+  int size = sizeof(nums) / sizeof(nums[0]);
 
   printf("\n|\t   Quicksort\t\t|\n");
   printf("---------------------------------\n");
 
-  printf("\nUnsorted list\n");
-  printNumbers(nums, listSize);
+  printf("\nUnsorted array\n");
+  printNumbers(nums, size);
 
-  quicksort(nums, 0, listSize);
+  quicksort(nums, 0, size);
 
-  printf("\nSorted list\n");
-  printNumbers(nums, listSize);
+  printf("\nSorted array\n");
+  printNumbers(nums, size);
 
   return 0;
 }
 
-void printNumbers(int *list, int size)
+void printNumbers(int *arr, int size)
 {
   for (int i = 0; i < size; i++)
   {
-    printf(" %d ", list[i]);
+    printf(" %d ", arr[i]);
   }
   printf("\n");
 }
 
-void quicksort(int *list, int start, int end)
+void quicksort(int *arr, int start, int end)
 {
   if (end <= start)
   {
     return;
   }
 
-  int pivot = partition(list, start, end);
-  quicksort(list, start, pivot - 1);
-  quicksort(list, pivot + 1, end);
+  int pivot = partition(arr, start, end);
+  quicksort(arr, start, pivot - 1);
+  quicksort(arr, pivot + 1, end);
 }
 
-int partition(int *list, int start, int end)
+int partition(int *arr, int start, int end)
 {
-  int pivot = list[end];
+  int pivot = arr[end];
   int i = start - 1;
 
   for (int j = start; j < end; j++)
   {
-    if (list[j] < pivot)
+    if (arr[j] < pivot)
     {
       i++;
-      swap(&list[i], &list[j]);
+      swap(&arr[i], &arr[j]);
     }
   }
 
   i++;
-  swap(&list[i], &list[end]);
+  swap(&arr[i], &arr[end]);
 
   return i;
 }

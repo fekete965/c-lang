@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void printNumbers(int *list, int size);
-void mergeSort(int *list, int size);
-void merge(int *left, int leftSize, int *right, int rightSize, int *list);
+void printNumbers(int *arr, int size);
+void mergeSort(int *arr, int size);
+void merge(int *left, int leftSize, int *right, int rightSize, int *arr);
 
 int main()
 {
@@ -12,27 +12,27 @@ int main()
   printf("\n|\t   Merge Sort\t\t|\n");
   printf("---------------------------------\n");
 
-  printf("\nUnsorted list\n");
+  printf("\nUnsorted array\n");
   printNumbers(nums, size);
 
   mergeSort(nums, size);
 
-  printf("\nSorted list\n");
+  printf("\nSorted array\n");
   printNumbers(nums, size);
 
   return 0;
 }
 
-void printNumbers(int *list, int size)
+void printNumbers(int *arr, int size)
 {
   for (int i = 0; i < size; i++)
   {
-    printf(" %d ", list[i]);
+    printf(" %d ", arr[i]);
   }
   printf("\n");
 }
 
-void mergeSort(int *list, int size)
+void mergeSort(int *arr, int size)
 {
   if (size <= 1)
   {
@@ -52,21 +52,21 @@ void mergeSort(int *list, int size)
   {
     if (i < leftSize)
     {
-      left[i] = list[i];
+      left[i] = arr[i];
     }
     else
     {
-      right[j] = list[i];
+      right[j] = arr[i];
       j++;
     }
   }
 
   mergeSort(left, leftSize);
   mergeSort(right, rightSize);
-  merge(left, leftSize, right, rightSize, list);
+  merge(left, leftSize, right, rightSize, arr);
 }
 
-void merge(int *left, int leftSize, int *right, int rightSize, int *list)
+void merge(int *left, int leftSize, int *right, int rightSize, int *arr)
 {
   int i = 0;
   int l = 0;
@@ -76,12 +76,12 @@ void merge(int *left, int leftSize, int *right, int rightSize, int *list)
   {
     if (left[l] < right[r])
     {
-      list[i] = left[l];
+      arr[i] = left[l];
       l++;
     }
     else
     {
-      list[i] = right[r];
+      arr[i] = right[r];
       r++;
     }
 
@@ -90,14 +90,14 @@ void merge(int *left, int leftSize, int *right, int rightSize, int *list)
 
   while (l < leftSize)
   {
-    list[i] = left[l];
+    arr[i] = left[l];
     i++;
     l++;
   }
 
   while (r < rightSize)
   {
-    list[i] = right[r];
+    arr[i] = right[r];
     i++;
     r++;
   }
