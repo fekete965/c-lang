@@ -4,6 +4,7 @@
 
   - [Bubble Sort](bubbleSort/bubbleSort.c)
   - [Heapsort](heapsort/heapsort.c)
+  - [Introsort](introsort/introsort.c)
   - [Insertion Sort](insertionSort/insertionSort.c)
   - [Merge Sort](mergeSort/mergeSort.c)
   - [Quicksort](quicksort/quicksort.c)
