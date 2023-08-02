@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
   printf("You have %f awesome super powers.\n", super_power);
   printf("I have an initial %c.\n", initial);
   printf("I have a first name %s.\n", first_name);
-  printf("I have a last name %s.\n",last_name);
+  printf("I have a last name %s.\n", last_name);
   printf("My whole name is %s %c. %s.\n", first_name, initial, last_name);
 
   int bugs = 100;
@@ -30,7 +30,6 @@ int main(int argc, char *argv[])
 
   double part_of_universe = expected_bugs / universe_of_defects;
   printf("That is only a %e portion of the universe.\n", part_of_universe);
-
 
   // this make no sense, just a demo of something weird
   char nul_byte = '\0';
