@@ -10,3 +10,5 @@
   - [Exercise 7](ex7.c)
   - [Exercise 8](ex8.c)
   - [Exercise 9](ex9.c)
+  - [Exercise 10](ex10.c)
+  - [Exercise 10 - Extra](ex10_extra.c)
