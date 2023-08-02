@@ -1,5 +1,9 @@
 # C - Practice
 
+- Projects:
+
+  - [Learn C the hard way](learn-c-the-hard-way)
+
 - Sorts:
 
   - [Bubble Sort](bubbleSort/bubbleSort.c)
