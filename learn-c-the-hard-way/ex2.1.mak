@@ -15,7 +15,12 @@ clean:
 	rm -f ex11_extra
 	rm -f ex12
 	rm -f ex12_extra
+	rm -f ex13
+	rm -f ex13_extra
 
+# To run this in the terminal, we need to use:
+# make -f ex2.1.mak all 
+# This is because the file isn't named as "make"
 all:
 	make ex1
 	make ex3
@@ -28,3 +33,5 @@ all:
 	make ex11_extra
 	make ex12
 	make ex12_extra
+	make ex13
+	make ex13_extra
