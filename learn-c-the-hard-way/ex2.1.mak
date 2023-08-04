@@ -13,6 +13,8 @@ clean:
 	rm -f ex10_extra
 	rm -f ex11
 	rm -f ex11_extra
+	rm -f ex12
+	rm -f ex12_extra
 
 all:
 	make ex1
@@ -24,3 +26,5 @@ all:
 	make ex10_extra
 	make ex11
 	make ex11_extra
+	make ex12
+	make ex12_extra
