@@ -18,3 +18,5 @@
   - [Exercise 12 - Extra](ex12_extra.c)
   - [Exercise 13](ex13.c)
   - [Exercise 13 - Extra](ex13_extra.c)
+  - [Exercise 14](ex14.c)
+  - [Exercise 14 - Extra](ex14_extra.c)

@@ -17,6 +17,8 @@ clean:
 	rm -f ex12_extra
 	rm -f ex13
 	rm -f ex13_extra
+	rm -f ex14
+	rm -f ex14_extra
 
 # To run this in the terminal, we need to use:
 # make -f ex2.1.mak all 
@@ -35,3 +37,5 @@ all:
 	make ex12_extra
 	make ex13
 	make ex13_extra
+	make ex14
+	make ex14_extra
