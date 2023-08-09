@@ -22,3 +22,5 @@
   - [Exercise 14 - Extra](ex14_extra.c)
   - [Exercise 15](ex15.c)
   - [Exercise 15 - Extra](ex15_extra.c)
+  - [Exercise 16](ex16.c)
+  - [Exercise 16 - Extra](ex16_extra.c)
