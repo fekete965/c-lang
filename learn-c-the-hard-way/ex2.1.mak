@@ -23,6 +23,9 @@ clean:
 	rm -f ex15_extra
 	rm -f ex16
 	rm -f ex16_extra
+	rm -f ex17
+	rm -f ex17_extra
+	rm -f ex17_extra_with_global_conn
 
 # To run this in the terminal, we need to use:
 # make -f ex2.1.mak all 
@@ -47,3 +50,6 @@ all:
 	make ex15_extra
 	make ex16
 	make ex16_extra
+	make ex17
+	make ex17_extra
+	make ex17_extra_with_global_conn

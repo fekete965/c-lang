@@ -24,3 +24,6 @@
   - [Exercise 15 - Extra](ex15_extra.c)
   - [Exercise 16](ex16.c)
   - [Exercise 16 - Extra](ex16_extra.c)
+  - [Exercise 17](ex17.c)
+  - [Exercise 17 - Extra](ex17_extra.c)
+  - [Exercise 17 - Extra with global connection](ex17_extra_with_global_conn.c)
