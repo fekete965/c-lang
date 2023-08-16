@@ -27,3 +27,4 @@
   - [Exercise 17](ex17.c)
   - [Exercise 17 - Extra](ex17_extra.c)
   - [Exercise 17 - Extra with global connection](ex17_extra_with_global_conn.c)
+  - [Exercise 17 - Extra stack](ex17_extra_stack.c)
