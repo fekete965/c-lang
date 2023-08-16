@@ -11,8 +11,8 @@ struct Address
 {
   int id;
   int set;
-  char name[DB_MAX_DATA];
-  char email[DB_MAX_DATA];
+  char name[MAX_DATA];
+  char email[MAX_DATA];
 };
 
 struct Database
@@ -125,12 +125,12 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
 
   addr->set = 1;
   // WARNING: bug, read the "How To Break It" and fix this
-  char *res = strncpy(addr->name, name, DB_MAX_DATA);
+  char *res = strncpy(addr->name, name, MAX_DATA);
   // demonstrate the strncpy bug
   if (!res)
     die("Name copy failed");
 
-  res = strncpy(addr->email, email, DB_MAX_DATA);
+  res = strncpy(addr->email, email, MAX_DATA);
   if (!res)
     die("Email copy failed");
 }

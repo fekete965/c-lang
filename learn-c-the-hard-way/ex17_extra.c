@@ -258,8 +258,10 @@ int Database_run_query(struct Connection *conn, struct Address *addr, char field
   case 'w':
     return addr->weight == atoi(query);
   default:
+  {
     die(conn, "Invalid action: f=first_name, l=last_name, e=email, p=phone, h=height, w=weight");
     return 1;
+  }
   }
 }
 
