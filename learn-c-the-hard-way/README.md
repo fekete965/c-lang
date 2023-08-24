@@ -30,3 +30,6 @@
   - [Exercise 17 - Extra stack](ex17_extra_stack.c)
   - [Exercise 18](ex18.c)
   - [Exercise 18 - Extra](ex18_extra.c)
+  - [Debug Macros](dbg.h)
+  - [Debug Macros - Extra](dbg_extra.h)
+  - [Exercise 19](ex19.c)

@@ -1,4 +1,6 @@
 CFLAGS=-Wall -g
+# Defin "-DNDEBUG" flag if you want to compile your executable without debug mode
+# CFLAGS=-Wall -g -DNDEBUG
 
 # To run this in the terminal, we need to use:
 # make -f ex2.1.mak clean 
@@ -29,6 +31,7 @@ clean:
 	rm -f ex17_extra_stack
 	rm -f ex18
 	rm -f ex18_extra
+	rm -f ex19
 
 # To run this in the terminal, we need to use:
 # make -f ex2.1.mak all 
@@ -59,3 +62,4 @@ all:
 	make ex17_extra_stack
 	make ex18
 	make ex18_extra
+	make ex19
