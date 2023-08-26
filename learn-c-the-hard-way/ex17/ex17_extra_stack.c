@@ -31,7 +31,6 @@ int main(int argc, char *argv[])
 
   MyStack stack = {.top = -1};
   int cmd = 0;
-  int *val = NULL;
 
   printf("Exercise 17 - Extra Credit Stack\n");
   printf(HELP_MESSAGE);
