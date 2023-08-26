@@ -6,6 +6,7 @@ CFLAGS=-Wall -g
 # make -f ex2.1.mak clean 
 # This is because the file isn't named as "make"
 clean:
+	rm -rf *.dSYM
 	rm -f ex1
 	rm -f ex3
 	rm -f ex7
