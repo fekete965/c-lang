@@ -33,3 +33,6 @@
   - [Debug Macros](debug_macros/dbg.h)
   - [Debug Macros - Extra](debug_macros/dbg_extra.h)
   - [Exercise 19](ex19/ex19.c)
+  - Exercise 20 - No code
+  - [Exercise 21 - Extra credit available sizes markdown](ex21/extra_credit_available_sizes.md)
+  - [Exercise 21 - Extra credit code](ex21/extra_credit.c)
