@@ -36,3 +36,4 @@
   - Exercise 20 - No code
   - [Exercise 21 - Extra credit available sizes markdown](ex21/extra_credit_available_sizes.md)
   - [Exercise 21 - Extra credit code](ex21/extra_credit.c)
+  - [Exercise 22](ex22/ex22_main.c)
