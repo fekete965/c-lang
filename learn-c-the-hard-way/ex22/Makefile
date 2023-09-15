@@ -1,8 +1,8 @@
 CFLAGS=-Wall -g
 
-all: 
+all:
 	clang ex22.c ex22_main.c -o ex22_main
 
-clean: 
+clean:
 	rm -rf *.dSYM
 	rm -f ex22_main
