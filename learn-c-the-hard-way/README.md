@@ -38,3 +38,4 @@
   - [Exercise 21 - Extra credit code](ex21/extra_credit.c)
   - [Exercise 22](ex22/ex22_main.c)
   - [Exercise 22 - Extra](ex22_extra/ex22_main_extra.c)
+  - [Exercise 23](ex23/ex23.c)
