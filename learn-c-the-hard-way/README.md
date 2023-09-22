@@ -40,3 +40,4 @@
   - [Exercise 22 - Extra Credit](ex22_extra/ex22_main_extra.c)
   - [Exercise 23](ex23/ex23.c)
   - [Exercise 23 - Extra Credit](ex23_extra/ex23_extra.c)
+  - [Exercise 24](ex24/ex24.c)
