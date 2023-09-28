@@ -41,3 +41,4 @@
   - [Exercise 23](ex23/ex23.c)
   - [Exercise 23 - Extra Credit](ex23_extra/ex23_extra.c)
   - [Exercise 24](ex24/ex24.c)
+  - [Exercise 24 - Extra Credit: No fscanf](ex24_extra_no_fscanf/ex24_extra_no_fscanf.c)
