@@ -7,10 +7,24 @@
 
 int read_string(char **out_string, int max_buffer)
 {
+  int i = 0;
+  int char_int = -1;
   *out_string = calloc(1, max_buffer + 1);
   check_mem(*out_string);
 
-  char *result = fgets(*out_string, max_buffer, stdin);
+  for (i = 0; i < max_buffer - 1; i++)
+  {
+    char_int = fgetc(stdin);
+    if (char_int == '\n')
+      break;
+
+    (*out_string)[i] = char_int;
+  }
+  (*out_string)[i + 1] = '\0';
+
+  // Initial approach
+  // char *result = fgets(*out_string, max_buffer, stdin);
+  // check(result != NULL, "Input error.");
 
   return 0;
 
@@ -56,6 +70,7 @@ int read_scan(const char *fmt, ...)
   {
     if (fmt[i] == '%')
     {
+      i++;
       switch (fmt[i])
       {
       case '\0':
@@ -124,9 +139,9 @@ int main(int argc, char *argv[])
   check(rc == 0, "Failed to read age.");
 
   printf("---- RESULTS ----\n");
-  printf("First Name: %s", first_name);
+  printf("First Name: %s\n", first_name);
   printf("Initial: %c\n", initial);
-  printf("Last Name: %s", last_name);
+  printf("Last Name: %s\n", last_name);
   printf("Age: %ld\n", age);
 
   free(first_name);

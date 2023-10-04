@@ -44,3 +44,4 @@
   - [Exercise 24 - Extra Credit: No fscanf](ex24_extra_no_fscanf/ex24_extra_no_fscanf.c)
   - [Exercise 24 - Extra Credit: scanf](ex24_extra_scanf/ex24_extra_scanf.c)
   - [Exercise 24 - Extra Credit: Custom scanf Read](ex24_extra_custom_scanf_read/ex24_extra_custom_scanf_read.c)
+  - [Exercise 25](ex25/ex25.c)

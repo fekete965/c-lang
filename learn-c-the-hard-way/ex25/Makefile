@@ -1,6 +1,9 @@
 CLFAGS=-Wall -g
 
-all: ex25
+debug: ex25
+
+prod:
+	clang -DNDEBUG ex25.c -o ex25
 
 clean:
 	rm -rf *.dSYM
