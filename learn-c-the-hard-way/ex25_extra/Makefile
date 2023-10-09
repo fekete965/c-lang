@@ -1,4 +1,4 @@
-CLFAGS=-Wall -g
+CFLAGS=-Wall -g
 
 debug: ex25_extra
 
