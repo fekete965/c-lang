@@ -2,7 +2,7 @@ CFLAGS=-Wall -g
 
 all:
 	clang -c ex22.c -o ex22.o
-	clang ex22.c ex22_main.c -o ex22_main
+	clang ex22.o ex22_main.c -o ex22_main
 
 prod:
 	clang -DNDEBUG -c ex22.c -o ex22.o
