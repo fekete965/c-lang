@@ -47,3 +47,4 @@
   - [Exercise 25](ex25/ex25.c)
   - [Exercise 25 - Extra Credit](ex25_extra/ex25_extra.c)
   - [Exercise 26 - logfind](ex26/logfind.c)
+  - [Exercise 26 - logfind: Using Glob](ex26_using_glob/logfind_using_glob.c)
