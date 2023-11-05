@@ -49,3 +49,5 @@
   - [Exercise 26 - logfind](ex26/logfind.c)
   - [Exercise 26 - logfind: Using Glob](ex26_using_glob/logfind_using_glob.c)
   - [Exercise 26 - logfind: Author's Solution](ex26_authors_solution/logfind_authors_solution.c)
+  - [Exercise 27](ex27/ex27.c)
+  - [Exercise 28](ex28/c-skeleton)
