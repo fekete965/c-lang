@@ -16,7 +16,7 @@ int main()
   printf("\nUnsorted array\n");
   printNumbers(nums, size);
 
-  quicksort(nums, 0, size);
+  quicksort(nums, 0, size - 1);
 
   printf("\nSorted array\n");
   printNumbers(nums, size);
