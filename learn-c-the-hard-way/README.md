@@ -51,3 +51,4 @@
   - [Exercise 26 - logfind: Author's Solution](ex26_authors_solution/logfind_authors_solution.c)
   - [Exercise 27](ex27/ex27.c)
   - [Exercise 28](ex28/c-skeleton)
+  - [Exercise 29](ex29)
