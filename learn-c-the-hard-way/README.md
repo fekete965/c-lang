@@ -53,3 +53,4 @@
   - [Exercise 28](ex28/c-skeleton)
   - [Exercise 29](ex29)
   - [Exercise 29 - Extra Credit](ex29_extra)
+  - [Exercise 30](ex30)
