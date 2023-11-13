@@ -13,7 +13,6 @@ int uppercase(const char *msg, int length)
 {
   int i = 0;
 
-  // BUG: \0 termination problems
   for (i = 0; i < length; i++)
   {
     printf("%c", toupper(msg[i]));
@@ -28,7 +27,6 @@ int lowercase(const char *msg, int length)
 {
   int i = 0;
 
-  // BUG: \0 termination problems
   for (i = 0; i < length; i++)
   {
     printf("%c", tolower(msg[i]));
