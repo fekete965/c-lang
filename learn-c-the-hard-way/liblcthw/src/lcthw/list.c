@@ -49,6 +49,7 @@ void List_push(List *list, void *value)
   else
   {
     list->last->next = node;
+    node->prev = list->last;
     list->last = node;
   }
 
@@ -100,7 +101,7 @@ void *List_remove(List *list, ListNode *node)
   void *result = NULL;
 
   check(list->first && list->last, "List is empty.");
-  check(node, "node can't be NULL");
+  check(node, "Node can't be NULL");
 
   if (node == list->first && node == list->last)
   {

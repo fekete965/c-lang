@@ -34,6 +34,7 @@ char *test_push_pop()
 
   List_push(list, test3);
   mu_assert(List_last(list) == test3, "Wring last value.");
+  mu_assert(List_first(list) == test1, "Wrong first value.");
   mu_assert(list->count == 3, "Wrong count on push.");
 
   char *val = List_pop(list);
