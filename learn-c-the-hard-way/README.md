@@ -54,3 +54,5 @@
   - [Exercise 29](ex29)
   - [Exercise 29 - Extra Credit](ex29_extra)
   - [Exercise 30](ex30)
+  - Exercise 31 - No code
+  - [Exercise 32](liblcthw)
