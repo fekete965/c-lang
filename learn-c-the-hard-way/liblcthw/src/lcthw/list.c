@@ -40,9 +40,21 @@ error:
 
 void List_clear_destroy(List *list)
 {
-  List_clear(list);
-  List_destroy(list);
   CHECK_LIST(list);
+
+  LIST_FOREACH(list, first, next, cur)
+  {
+    free(cur->value);
+
+    if (cur->prev)
+    {
+      free(cur->prev);
+    }
+  }
+
+  free(list->last);
+  free(list);
+
 error:
   return;
 }
