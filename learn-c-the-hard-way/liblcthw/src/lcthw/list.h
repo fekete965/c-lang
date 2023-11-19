@@ -2,6 +2,7 @@
 #define lcthw_List_h
 
 #include <stdlib.h>
+#include "dbg.h"
 
 struct ListNode;
 
@@ -39,5 +40,15 @@ void *List_remove(List *list, ListNode *node);
   ListNode *_node = NULL;        \
   ListNode *V = NULL;            \
   for (V = _node = L->S; _node != NULL; V = _node = _node->M)
+
+#define CHECK_LIST(L)                            \
+  {                                              \
+    check((L) != NULL, "Invalid list");          \
+    check((L)->count >= 0, "Invalid list");      \
+    if ((L)->count > 0)                          \
+    {                                            \
+      check((L)->first != NULL, "Invalid list"); \
+    }                                            \
+  }
 
 #endif
