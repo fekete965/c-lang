@@ -194,4 +194,27 @@ Input:
     }                                            \
   }
 
+/*
+This function splits a list at an index
+
+Input:
+  - List *list: this is the list that will be splitted
+  - int at: this is the index where we split the list
+Output:
+  The return value is a new list containing the splitted elements
+*/
+List *List_split(List *list, int at);
+
+/*
+This function joins 2 lists together
+
+Input:
+  - List *rootList: this is the root list that serves as the base list
+  - List *list: this is the last that will be added to the rootList
+  - size_t size: this is the size of the data stored within the list nodes
+Output:
+  The return value is a new List* containing the elements from listA and listB
+*/
+List *List_join(List *listA, List *listB, size_t size);
+
 #endif
