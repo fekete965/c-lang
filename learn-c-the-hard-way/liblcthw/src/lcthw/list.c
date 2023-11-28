@@ -9,7 +9,7 @@ List *List_create()
   return list;
 
 error:
-  return;
+  return list;
 }
 
 void List_destroy(List *list)
@@ -37,7 +37,10 @@ void List_clear(List *list)
 
   LIST_FOREACH(list, first, next, cur)
   {
-    free(cur->value);
+    if (cur->value != NULL)
+    {
+      free(cur->value);
+    }
   }
 
 error:
@@ -50,15 +53,21 @@ void List_clear_destroy(List *list)
 
   LIST_FOREACH(list, first, next, cur)
   {
-    free(cur->value);
+    if (cur->value != NULL)
+    {
+      free(cur->value);
+    }
 
-    if (cur->prev)
+    if (cur->prev != NULL)
     {
       free(cur->prev);
     }
   }
 
-  free(list->last);
+  if (list->last != NULL)
+  {
+    free(list->last);
+  }
   free(list);
 
 error:
@@ -143,9 +152,9 @@ error:
 
 void *List_remove(List *list, ListNode *node)
 {
-  CHECK_LIST(list);
-
   void *result = NULL;
+
+  CHECK_LIST(list);
 
   check(list->first && list->last, "List is empty.");
   check(node, "Node can't be NULL");
@@ -185,11 +194,13 @@ error:
 
 List *List_split(List *list, int at)
 {
+  List *newList = NULL;
+
   CHECK_LIST(list);
 
-  check(list->count >= at, "List does not have enough elements");
+  newList = List_create();
 
-  List *newList = List_create();
+  check(list->count >= at, "List does not have enough elements");
 
   // If the index where we should split is equals to the count
   // we simply return an empty list
@@ -198,13 +209,19 @@ List *List_split(List *list, int at)
     return newList;
   }
 
-  // If the index where we should split at is 0
-  // we swap the original and new array references
+  // If the index where we should move every node
+  // from the original list into the new list
   if (at == 0)
   {
-    List *tmp = list;
-    list = newList;
-    newList = tmp;
+    newList->count = list->count;
+    newList->first = list->first;
+    newList->last = list->last;
+
+    list->count = 0;
+    list->first = NULL;
+    list->last = NULL;
+
+    return newList;
   }
 
   // Otherwise we iterate through the list and split where needed
@@ -216,9 +233,9 @@ List *List_split(List *list, int at)
     {
       newList->first = cur;
       newList->last = list->last;
-      list->last = cur->prev;
+      list->last = newList->first->prev;
       list->last->next = NULL;
-      cur->prev = NULL;
+      newList->first->prev = NULL;
 
       newList->count = list->count - at;
       list->count = at;
@@ -226,37 +243,42 @@ List *List_split(List *list, int at)
     }
 
     i++;
-  }
+  };
 
   return newList;
 
 error:
-  return;
+  return newList;
 }
 
-List *List_join(List *listA, List *listB, size_t size)
+List *List_join(List *listA, List *listB)
 {
+  List *newList = NULL;
+
   CHECK_LIST(listA);
   CHECK_LIST(listB);
 
-  List *newList = List_create();
+  newList = List_create();
 
-  LIST_FOREACH(listA, first, next, cur)
   {
-    void *value = NULL;
-    memcpy(value, cur->value, size);
-    List_push(newList, value);
+    LIST_FOREACH(listA, first, next, cur)
+    {
+      List_push(newList, cur->value);
+    }
   }
 
-  LIST_FOREACH(listB, first, next, cur)
   {
-    void *value = NULL;
-    memcpy(value, cur->value, size);
-    List_push(newList, value);
+    LIST_FOREACH(listB, first, next, cur)
+    {
+      List_push(newList, cur->value);
+    }
   }
+
+  free(listA);
+  free(listB);
 
   return newList;
 
 error:
-  return;
+  return newList;
 }

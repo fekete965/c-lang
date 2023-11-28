@@ -206,15 +206,14 @@ Output:
 List *List_split(List *list, int at);
 
 /*
-This function joins 2 lists together
+This function joins 2 lists together.
 
 Input:
   - List *rootList: this is the root list that serves as the base list
   - List *list: this is the last that will be added to the rootList
-  - size_t size: this is the size of the data stored within the list nodes
 Output:
   The return value is a new List* containing the elements from listA and listB
 */
-List *List_join(List *listA, List *listB, size_t size);
+List *List_join(List *listA, List *listB);
 
 #endif
