@@ -55,4 +55,5 @@
   - [Exercise 29 - Extra Credit](ex29_extra)
   - [Exercise 30](ex30)
   - Exercise 31 - No code
-  - [Exercise 32](liblcthw)
+  - [Exercise 32 - List](liblcthw/src/lcthw/list.c)
+  - [Exercise 33 - List algorithms](liblcthw/src/lcthw/list_algos.c)
