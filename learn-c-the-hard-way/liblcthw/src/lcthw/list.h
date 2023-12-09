@@ -1,5 +1,5 @@
-#ifndef lcthw_List_h
-#define lcthw_List_h
+#ifndef lcthw_list_h
+#define lcthw_list_h
 
 #include <stdlib.h>
 #include "dbg.h"

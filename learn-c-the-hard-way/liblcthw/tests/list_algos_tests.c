@@ -23,6 +23,7 @@ List *create_words()
 
 int is_sorted(List *words)
 {
+
   LIST_FOREACH(words, first, next, cur)
   {
     if (cur->next && strcmp(cur->value, cur->next->value) > 0)
